@@ -1,0 +1,20 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,Amazon CloudFront,0,102.04,1224.48,USD,"Data transfer out to internet (1024 GB per month), Data transfer out to origin (250 GB per month), Number of requests (HTTPS) (10000000 per month)"
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,S3 Standard,0,21.07,252.84,USD,S3 Standard storage (500 GB per month)
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,S3 Intelligent - Tiering,0,55.37,664.44,USD,S3 INT storage (100 GB per month)
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,Data Transfer,0,0,0.00,USD,"DT Inbound: Internet (100 GB per month), DT Outbound: Amazon CloudFront (2 TB per month)"
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,Amazon Route 53,0,245.25,2943.00,USD,"Hosted Zones (3), Additional Records in Hosted Zones (7500), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate_Web_Servers,Amazon EC2,0,6053.42,72641.04,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (2 TB per month), DT Outbound: Amazon CloudFront (4 TB per month), DT Intra-Region: (0 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 6, Peak: 8, Duration of peak: 12 Hr 00 Min)), Advance EC2 instance (c4.4xlarge), Pricing strategy (All Reserved 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,Classic Load Balancer,0,189.8,2277.60,USD,"Number of Classic Load Balancers (4), Processed bytes per CLB (5 GB per hour)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,421,5052.00,USD,"Working days per month (22), Number of subnet associations (2)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,110.7,1328.40,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate_Application_Servers,Amazon EC2,0,4965.59,59587.08,USD,"Operating system (Linux), Storage amount (500 GB), DT Inbound: Internet (30 GB per month), DT Outbound: Internet (5 GB per month), DT Intra-Region: (500 GB per month), Workload (Consistent, Number of instances: 10), Advance EC2 instance (m4.4xlarge), Pricing strategy (All Reserved 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate_Database_Instances,Windows Server and SQL Server on Amazon EC2,0,6034.44,72413.28,USD,"EC2 Windows LI with SQL Server Standard LI (d3.2xlarge x 4), EBS gp3 (4 volumes, 1000 GiB)"
+
+
+With the increased budget, I put the DB servers back to the original configuration since it was working without issue.  However, I increased the baseline, peak and instance types for both the Web Servers and the Application Servers.  The application servers now have a consistent number of 10 instances (up from 6 previously) and are now running M4.4xlarge instances with 16CPU, 64GB RAM and are designed for high network performance.  The web servers are now configured with 16CPU, 30GB RAM and also designed for high network performance.  This application should see a remarkable improvement in performance.
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
