@@ -2,7 +2,7 @@
 Files related to Udacity_AWS_Cloud_Architect_Project2
 
 Included please find:
- - Updated Terraform code (main.tf)
+ - Updated Terraform code (main.tf, variable.tf, outputs.tf)
  - Cost-effective AWS infrastructure diagram (Udacity_Diagram_1.pdf)
  - Serverless schematic diagram (Udacity_Diagram_2.pdf)
  - Initial_Cost_Estimate.csv
