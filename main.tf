@@ -1,9 +1,5 @@
 # TODO: Designate a cloud provider, region, and credentials
 provider "aws" {
-/* Remove if possible
-  access_key = "AKIATDJ7NHHSB3DUL224"
-  secret_key = "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"
-*/
   region = var.Udacity_region
 }
 
