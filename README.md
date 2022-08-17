@@ -10,9 +10,9 @@ Included please find:
  - Increased_Cost_Estimate.csv including rationale
  - CloudTrail Log (Terraform_2_3.csv)
  - AWS Console screenshots from the Terraform exercises:
-  - Terraform_1_1.png
-  - Terraform_1_2.png
-  - Terraform_2_1.png
-  - Terraform_2_2.png
-  - Terraform_2_3.png
-  - Terraform_destroyed.png
+    - Terraform_1_1.png
+    - Terraform_1_2.png
+    - Terraform_2_1.png
+    - Terraform_2_2.png
+    - Terraform_2_3.png
+    - Terraform_destroyed.png
